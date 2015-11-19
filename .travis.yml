@@ -10,7 +10,7 @@ install:
   - travis_retry composer update && composer install --no-interaction --prefer-source
 
 script:
-  phpunit --bootstrap=./vendor/autoload.php ./tests --coverage-clover=coverage.xml
+  - vendor/bin/phpunit --verbose --coverage-text --coverage-clover=coverage.xml ./tests
 
 before_install:
   - pip install --user codecov
