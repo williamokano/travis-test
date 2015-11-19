@@ -6,4 +6,9 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testShunay()
+    {
+        $this->assertTrue(true);
+    }
 }
