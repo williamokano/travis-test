@@ -11,4 +11,4 @@ install:
   - travis_retry composer install --no-interaction --prefer-source
 
 script:
-    phpunit ./tests
+    phpunit --bootstrap=./vendor/autoload.php ./tests
