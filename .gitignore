@@ -1,2 +1,4 @@
 .evn
 vendor/
+
+composer.lock
