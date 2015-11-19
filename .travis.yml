@@ -7,7 +7,7 @@ php:
 sudo: false
 
 install:
-  - travis_retry composer install --no-interaction --prefer-source
+  - travis_retry composer update && composer install --no-interaction --prefer-source
 
 script:
     phpunit --bootstrap=./vendor/autoload.php ./tests
