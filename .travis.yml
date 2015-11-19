@@ -8,3 +8,6 @@ sudo: false
 
 install:
   - travis_retry composer install --no-interaction --prefer-source
+
+script:
+    phpunit ./tests
